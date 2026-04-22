@@ -4,13 +4,15 @@
 
 1. **Setup the environment:**
 
-   torch==2.7.1
+   python>=3.11
+   cuda==11.8
+   torch==2.7.1cu118
 
    ```
    pip install -r requirements.txt
    ```
 
-2. **Download DeepSeek-R1-Distill-Qwen-7B from hugging face:**
+3. **Download DeepSeek-R1-Distill-Qwen-7B from hugging face:**
 
    ```
    export HF_ENDPOINT=https://hf-mirror.com
@@ -18,7 +20,7 @@
    huggingface-cli download --resume-download deepseek-ai/DeepSeek-R1-Distill-Qwen-7B --local-dir ./DeepSeek-R1-Distill-Qwen-7B --local-dir-use-symlinks False --resume-download --token <your_huggingface_token>
    ```
 
-3. **Reproduce the Results from the Paper:**
+4. **Reproduce the Results from the Paper:**
 
    **Step 1: start generalization-aware behavioral cloning**
 
@@ -44,7 +46,7 @@
    bash lssg.sh
    ```
 
-4. **Evaluate the Results of Our Model:**
+5. **Evaluate the Results of Our Model:**
 
    **Reasoning Evaluation:**
 
