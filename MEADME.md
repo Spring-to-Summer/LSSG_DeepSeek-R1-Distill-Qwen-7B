@@ -4,8 +4,8 @@
 
 1. **Setup the environment:**
 
-   python>=3.11
-   cuda==11.8
+   python>=3.11,
+   cuda==11.8,
    torch==2.7.1cu118
 
    ```
